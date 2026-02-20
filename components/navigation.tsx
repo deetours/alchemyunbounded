@@ -82,8 +82,32 @@ export function Navigation() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="fixed inset-0 z-50 bg-background md:hidden pt-24"
+            className="fixed inset-0 z-50 bg-background md:hidden pt-20"
           >
+            {/* Close Button */}
+            <div className="flex justify-end px-6 py-4">
+              <button
+                onClick={() => setIsOpen(false)}
+                className="p-2"
+                aria-label="Close menu"
+              >
+                <motion.svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-foreground"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </motion.svg>
+              </button>
+            </div>
+
             <div className="flex flex-col items-center justify-start h-full gap-8 px-6">
               {navLinks.map((link, index) => (
                 <motion.div
