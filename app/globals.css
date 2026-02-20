@@ -1,7 +1,4 @@
 @import "tailwindcss";
-@import "tw-animate-css";
-
-@custom-variant dark (&:is(.dark *));
 
 /* Updated to earth + breath color palette for Alchemy Unbounded */
 :root {
@@ -75,8 +72,7 @@
   --sidebar-ring: oklch(0.55 0.1 145);
 }
 
-@theme inline {
-  /* Updated fonts - Playfair Display for serif, Inter for sans */
+@theme {
   --font-sans: "Inter", "Inter Fallback", sans-serif;
   --font-serif: "Playfair Display", "Playfair Display Fallback", serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback";

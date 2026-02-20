@@ -50,6 +50,34 @@ export default function BeginPage() {
         </div>
       </section>
 
+      {/* Before You Reach Out */}
+      <section className="py-16 px-6 bg-card">
+        <div className="max-w-3xl mx-auto text-center">
+          <ScrollReveal>
+            <h2 className="font-serif text-lg text-primary mb-12 tracking-widest uppercase">Before You Reach Out</h2>
+          </ScrollReveal>
+
+          <LineReveal
+            lines={[
+              "You don't need to have clarity.",
+              "You don't need to have the right words.",
+              "You don't need to know exactly what you're looking for.",
+              "",
+              "Just come as you are.",
+            ]}
+            className="text-center"
+            lineClassName="font-serif text-xl md:text-2xl text-foreground leading-relaxed"
+            delay={0.2}
+          />
+
+          <ScrollReveal delay={0.8}>
+            <p className="mt-16 text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+              Confusion is welcome here. Doubt is welcome. Questions without answers are welcome.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* Invitation Text */}
       <section className="py-16 px-6">
         <div className="max-w-3xl mx-auto">

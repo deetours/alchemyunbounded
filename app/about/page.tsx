@@ -47,7 +47,34 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Section 1 - Who He Is (Essence) */}
+      {/* Section 1 - What I Stand Against */}
+      <section className="py-32 px-6">
+        <div className="max-w-4xl mx-auto">
+          <ScrollReveal>
+            <h2 className="font-serif text-lg text-primary mb-16 tracking-widest uppercase">What I Stand Against</h2>
+          </ScrollReveal>
+
+          <LineReveal
+            lines={[
+              "I do not believe in fixing people.",
+              "I do not believe in performance-based healing.",
+              "I do not believe transformation should feel like another task.",
+            ]}
+            className="space-y-6"
+            lineClassName="font-serif text-xl md:text-2xl text-foreground leading-relaxed"
+            delay={0.2}
+          />
+
+          <ScrollReveal delay={0.8}>
+            <p className="mt-16 text-muted-foreground leading-relaxed max-w-2xl">
+              Instead, I work with the understanding that every human being is already whole—and that transformation
+              happens when we create space for what already knows how to emerge.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Section 1b - Who He Is (Essence) */}
       <section className="py-32 px-6 bg-card">
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>

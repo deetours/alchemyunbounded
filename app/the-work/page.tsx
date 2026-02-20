@@ -190,8 +190,132 @@ export default function TheWorkPage() {
         </div>
       </section>
 
-      {/* Wholeness Philosophy */}
+      {/* Who This Is For */}
+      <section className="py-32 px-6 bg-card">
+        <div className="max-w-4xl mx-auto">
+          <ScrollReveal>
+            <h2 className="font-serif text-lg text-primary mb-16 tracking-widest uppercase">Who This Is For</h2>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* For Creators */}
       <section className="py-32 px-6">
+        <div className="max-w-4xl mx-auto">
+          <ScrollReveal>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">For Creators</h2>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.2}>
+            <p className="text-muted-foreground leading-relaxed mb-12 text-lg">
+              You are a maker, artist, writer, or anyone whose work flows from inner vision. Your creative fire is your
+              truth-telling instrument.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.3}>
+            <p className="text-muted-foreground leading-relaxed mb-12">
+              The world right now asks creators to perform, optimize, go viral, build audiences. It asks you to split
+              yourself between the authentic work and the algorithmic work. To monitor metrics. To shrink your message
+              to what's trending.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.4}>
+            <p className="text-muted-foreground leading-relaxed mb-12">
+              Many creators reach a point where the split becomes unbearable. Where the performance exhausts the
+              authentic work. Where you realize that building an audience through inauthenticity is a slow form of
+              creative death.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.5}>
+            <p className="font-serif text-lg text-foreground italic">
+              This work is about returning to creative integrity. Building visibility without losing yourself.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* For Entrepreneurs */}
+      <section className="py-32 px-6 bg-card">
+        <div className="max-w-4xl mx-auto">
+          <ScrollReveal>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">For Entrepreneurs</h2>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.2}>
+            <p className="text-muted-foreground leading-relaxed mb-12 text-lg">
+              You have a vision. A problem you want to solve. Something you believe the world needs.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.3}>
+            <p className="text-muted-foreground leading-relaxed mb-12">
+              The path of entrepreneurship is not just a business problem—it is an identity problem. You are learning
+              to lead, to hold complexity, to make decisions with incomplete information, to face failure without it
+              destroying you.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.4}>
+            <p className="text-muted-foreground leading-relaxed mb-12">
+              Many entrepreneurs reach a point where they realize that business skills are not enough. That leadership
+              is hollow without self-awareness. That scaling a business while staying fragmented inside is a path to
+              burnout, not freedom.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.5}>
+            <p className="font-serif text-lg text-foreground italic">
+              This work is about building your internal foundation so that your external vision can stand. About
+              becoming a leader who remains embodied, clear, and whole.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* For Changemakers */}
+      <section className="py-32 px-6">
+        <div className="max-w-4xl mx-auto">
+          <ScrollReveal>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">For Changemakers</h2>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.2}>
+            <p className="text-muted-foreground leading-relaxed mb-12 text-lg">
+              You care deeply about something larger than yourself. You work toward social, environmental, or cultural
+              change. You are driven by purpose, not profit.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.3}>
+            <p className="text-muted-foreground leading-relaxed mb-12">
+              The work of transformation, activism, or service comes with a particular burden: burnout from caring too
+              much. Moral injury from the gap between vision and reality. Cynicism from years of effort that feel
+              insignificant against the scale of the problem.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.4}>
+            <p className="text-muted-foreground leading-relaxed mb-12">
+              Many changemakers reach a breaking point where they realize that their effectiveness is only as strong as
+              their own inner resilience. That sustainable change work requires that you tend to your own transformation
+              first.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.5}>
+            <p className="font-serif text-lg text-foreground italic">
+              This work is about building practices that sustain you. About deepening resilience without hardening the
+              heart. About lasting change that comes from a place of inner wholeness, not depletion.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Wholeness Philosophy */}
+      <section className="py-32 px-6 bg-card">
         <div className="max-w-3xl mx-auto text-center">
           <ScrollReveal>
             <blockquote className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed mb-8">

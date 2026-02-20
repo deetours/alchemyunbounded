@@ -72,9 +72,9 @@ export default function HomePage() {
             transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
             className="font-serif text-3xl md:text-5xl lg:text-6xl text-foreground text-center max-w-4xl leading-tight"
           >
-            Experience deep transformation in
+            Step into the version of you
             <br />
-            <span className="text-primary">life, work, and creativity</span>
+            <span className="text-primary">that no longer needs to pretend</span>
           </motion.h1>
 
           <motion.p
@@ -103,8 +103,31 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* Scroll 1 - The Invitation */}
+      {/* Scroll 1 - The World This Work Responds To */}
       <section className="min-h-screen flex items-center justify-center py-32 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <ScrollReveal>
+            <h2 className="font-serif text-lg text-primary mb-16 tracking-widest uppercase">The World We Live In</h2>
+          </ScrollReveal>
+
+          <LineReveal
+            lines={[
+              "The world is speeding up.",
+              "Attention is shrinking.",
+              "Depth is becoming rare.",
+              "",
+              "This space exists for those who feel that—",
+              "and refuse to live on the surface.",
+            ]}
+            className="text-center space-y-6"
+            lineClassName="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground leading-loose"
+            delay={0.2}
+          />
+        </div>
+      </section>
+
+      {/* Scroll 1b - The Invitation */}
+      <section className="min-h-screen flex items-center justify-center py-32 px-6 bg-card">
         <LineReveal
           lines={["You are not broken.", "You are not behind.", "You are not late.", "", "You are becoming."]}
           className="text-center"
@@ -113,7 +136,7 @@ export default function HomePage() {
       </section>
 
       {/* Scroll 2 - What This Space Is */}
-      <section className="min-h-screen flex items-center bg-card py-32 px-6">
+      <section className="min-h-screen flex items-center py-32 px-6">
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
             <h2 className="font-serif text-lg text-primary mb-12 tracking-widest uppercase">This Space</h2>
@@ -137,6 +160,30 @@ export default function HomePage() {
               conditions—presence, awareness, and a willingness to meet ourselves exactly where we are.
             </p>
           </ScrollReveal>
+
+          <ScrollReveal delay={1.0}>
+            <p className="mt-8 font-serif text-lg md:text-xl text-foreground italic border-l-2 border-primary pl-6">
+              "Slowness as intelligence. Breath as wisdom. Body as home."
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Scroll 2b - If You're Here */}
+      <section className="min-h-screen flex items-center bg-card py-32 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <LineReveal
+            lines={[
+              "If you're here, something in you already knows.",
+              "",
+              "You didn't land here by accident.",
+              "Something in you is already turning inward.",
+              "Already questioning.",
+              "Already remembering.",
+            ]}
+            className="text-center"
+            lineClassName="font-serif text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed"
+          />
         </div>
       </section>
 
@@ -191,27 +238,29 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
             {homeTestimonials.slice(0, 3).map((testimonial, index) => (
-              <TestimonialCardCompact
-                key={index}
-                quote={testimonial.quote}
-                name={testimonial.name}
-                role={testimonial.role}
-                location={testimonial.location}
-                delay={index * 0.1}
-              />
+              <div key={index}>
+                <TestimonialCardCompact
+                  quote={testimonial.quote}
+                  name={testimonial.name}
+                  role={testimonial.role}
+                  location={testimonial.location}
+                  delay={index * 0.1}
+                />
+              </div>
             ))}
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 mt-12 max-w-3xl mx-auto">
             {homeTestimonials.slice(3, 5).map((testimonial, index) => (
-              <TestimonialCardCompact
-                key={index + 3}
-                quote={testimonial.quote}
-                name={testimonial.name}
-                role={testimonial.role}
-                location={testimonial.location}
-                delay={(index + 3) * 0.1}
-              />
+              <div key={index + 3}>
+                <TestimonialCardCompact
+                  quote={testimonial.quote}
+                  name={testimonial.name}
+                  role={testimonial.role}
+                  location={testimonial.location}
+                  delay={(index + 3) * 0.1}
+                />
+              </div>
             ))}
           </div>
 
@@ -229,8 +278,61 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Scroll 3 - Gentle CTA */}
-      <section className="min-h-[80vh] flex items-center justify-center py-32 px-6 bg-card">
+      {/* Scroll 3 - The Moment People Arrive */}
+      <section className="min-h-screen flex items-center py-32 px-6">
+        <div className="max-w-4xl mx-auto">
+          <ScrollReveal>
+            <h2 className="font-serif text-lg text-primary mb-16 tracking-widest uppercase">The Moment</h2>
+          </ScrollReveal>
+
+          <LineReveal
+            lines={[
+              "You've tried productivity systems.",
+              "Therapy that stayed in the head.",
+              "Courses that gave information but not change.",
+              "",
+              "And something inside you said:",
+              '"There has to be another way to live."',
+            ]}
+            className="space-y-6"
+            lineClassName="font-serif text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed"
+            delay={0.2}
+          />
+
+          <ScrollReveal delay={1.0}>
+            <p className="mt-16 text-muted-foreground leading-relaxed max-w-2xl">
+              That moment—that inner knowing that something deeper is possible—is what brings people to this work.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Scroll 3b - What Happens If You Don't */}
+      <section className="min-h-screen flex items-center bg-card py-32 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <ScrollReveal>
+            <h2 className="font-serif text-lg text-primary mb-16 tracking-widest uppercase">Without This Work</h2>
+          </ScrollReveal>
+
+          <LineReveal
+            lines={[
+              "Without spaces like this,",
+              "people don't burn out dramatically.",
+              "",
+              "They fade slowly.",
+              "Creativity goes quiet.",
+              "Life becomes functional…",
+              "but not alive.",
+            ]}
+            className="text-center"
+            lineClassName="font-serif text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed"
+            delay={0.2}
+          />
+        </div>
+      </section>
+
+      {/* Scroll 4 - Gentle CTA */}
+      <section className="min-h-[80vh] flex items-center justify-center py-32 px-6">
         <div className="text-center">
           <ScrollReveal>
             <p className="font-serif text-xl md:text-2xl text-muted-foreground mb-12">If something here resonates...</p>
