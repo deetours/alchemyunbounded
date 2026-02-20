@@ -82,9 +82,9 @@ export function Navigation() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="fixed inset-0 z-40 bg-background md:hidden"
+            className="fixed inset-0 z-50 bg-background md:hidden pt-24"
           >
-            <div className="flex flex-col items-center justify-center h-full gap-8">
+            <div className="flex flex-col items-center justify-start h-full gap-8 px-6">
               {navLinks.map((link, index) => (
                 <motion.div
                   key={link.href}
