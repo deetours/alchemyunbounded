@@ -133,6 +133,58 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-background/40" />
       </section>
 
+      {/* Section 2.5 - The Signature Framework (100% Element #3) */}
+      <section className="py-32 px-6">
+        <div className="max-w-4xl mx-auto">
+          <ScrollReveal>
+            <h2 className="font-serif text-lg text-primary mb-16 tracking-widest uppercase">The Alchemy Becoming Path</h2>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.2}>
+            <p className="text-muted-foreground leading-relaxed mb-16 max-w-2xl">
+              This is not a method with steps. Not a formula. Not something you do to yourself. This is a living arc that unfolds uniquely for every person.
+            </p>
+          </ScrollReveal>
+
+          <div className="space-y-8">
+            <ScrollReveal delay={0.4}>
+              <div className="border-l-4 border-primary pl-6">
+                <h3 className="font-serif text-xl text-foreground mb-2">Awakening</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">Feeling the first tremor. Something is not aligned. The comfortable story is cracking.</p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.5}>
+              <div className="border-l-4 border-primary pl-6">
+                <h3 className="font-serif text-xl text-foreground mb-2">Pattern Dissolving</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">Meeting the old stories. Understanding why you built them. Watching them lose their grip.</p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.6}>
+              <div className="border-l-4 border-primary pl-6">
+                <h3 className="font-serif text-xl text-foreground mb-2">Embodied Integration</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">Learning with your whole self. Not just understanding, but living differently. Body, mind, and heart aligned.</p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.7}>
+              <div className="border-l-4 border-primary pl-6">
+                <h3 className="font-serif text-xl text-foreground mb-2">Authentic Expression</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">Finding your real voice. Creating from truth instead of fear. Building what only you can build.</p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.8}>
+              <div className="border-l-4 border-primary pl-6">
+                <h3 className="font-serif text-xl text-foreground mb-2">Expanded Impact</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">Your transformation becomes a signal. Others feel it. Your presence ripples outward.</p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
       {/* Section 3 - The Calling */}
       <section className="py-32 px-6 bg-card">
         <div className="max-w-4xl mx-auto">

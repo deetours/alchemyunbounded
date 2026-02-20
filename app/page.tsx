@@ -103,6 +103,34 @@ export default function HomePage() {
         </motion.div>
       </section>
 
+      {/* Scroll 0 - Identity Mirror (100% Element #1) */}
+      <section className="min-h-screen flex items-center justify-center py-32 px-6 bg-card">
+        <div className="max-w-4xl mx-auto text-center">
+          <ScrollReveal>
+            <h2 className="font-serif text-lg text-primary mb-16 tracking-widest uppercase">If You're Here, You Probably Feel This</h2>
+          </ScrollReveal>
+
+          <LineReveal
+            lines={[
+              "You built something.",
+              "But something inside still feels unfinished.",
+              "",
+              "You are capable.",
+              "But not fully expressed.",
+              "",
+              "You are successful.",
+              "But not fully alive inside your work.",
+              "",
+              "You are not broken.",
+              "You are becoming.",
+            ]}
+            className="text-center space-y-6"
+            lineClassName="font-serif text-xl md:text-2xl lg:text-3xl text-foreground leading-loose"
+            delay={0.2}
+          />
+        </div>
+      </section>
+
       {/* Scroll 1 - The World This Work Responds To */}
       <section className="min-h-screen flex items-center justify-center py-32 px-6">
         <div className="max-w-4xl mx-auto text-center">
@@ -278,7 +306,63 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Scroll 3 - The Moment People Arrive */}
+      {/* Scroll 3 - Cinematic Transformation Story (100% Element #2) */}
+      <section className="min-h-screen flex items-center py-32 px-6 bg-card">
+        <div className="max-w-4xl mx-auto">
+          <ScrollReveal>
+            <h2 className="font-serif text-lg text-primary mb-16 tracking-widest uppercase">A Moment That Changes Everything</h2>
+          </ScrollReveal>
+
+          <div className="space-y-16">
+            <ScrollReveal delay={0.2}>
+              <div>
+                <h3 className="font-serif text-lg text-primary mb-4 uppercase tracking-widest">Scene 1 — Disconnection</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  I had everything. Degrees, career, success. But inside? A hollow echo. I was performing competence while drowning in emptiness.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.4}>
+              <div>
+                <h3 className="font-serif text-lg text-primary mb-4 uppercase tracking-widest">Scene 2 — The Collapse</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  The body always knows first. Anxiety. Weightlessness. A quiet voice saying: "This isn't living. This is surviving." And I finally listened.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.6}>
+              <div>
+                <h3 className="font-serif text-lg text-primary mb-4 uppercase tracking-widest">Scene 3 — The Turning</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  I left the career. Dropped 100 pounds in 10 months without trying. It wasn't diet. It was the weight of pretending, finally released.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.8}>
+              <div>
+                <h3 className="font-serif text-lg text-primary mb-4 uppercase tracking-widest">Scene 4 — Realization</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  What I thought was broken was actually waking up. My anxiety wasn't dysfunction—it was sensitivity. My depth wasn't a weakness—it was the doorway.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={1.0}>
+              <div className="border-l-2 border-primary pl-6">
+                <h3 className="font-serif text-lg text-primary mb-4 uppercase tracking-widest">Scene 5 — New Identity</h3>
+                <p className="text-foreground leading-relaxed italic">
+                  "I stopped asking who I should be. I asked who was already here. And that person? They had been waiting the whole time."
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Scroll 3b - The Moment People Arrive */}
       <section className="min-h-screen flex items-center py-32 px-6">
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>

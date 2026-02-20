@@ -107,6 +107,43 @@ export default function OfferingsPage() {
         </div>
       </section>
 
+      {/* Identity Clarity (100% Element #4) */}
+      <section className="py-32 px-6 bg-card">
+        <div className="max-w-4xl mx-auto">
+          <ScrollReveal>
+            <h2 className="font-serif text-lg text-primary mb-16 tracking-widest uppercase">What This Work Does</h2>
+          </ScrollReveal>
+
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            <ScrollReveal delay={0.2}>
+              <div>
+                <h3 className="font-serif text-lg text-foreground mb-8 uppercase tracking-widest">Before</h3>
+                <ul className="space-y-4">
+                  <li className="text-muted-foreground leading-relaxed">→ Overthinking decisions from fear</li>
+                  <li className="text-muted-foreground leading-relaxed">→ Creating from pressure instead of purpose</li>
+                  <li className="text-muted-foreground leading-relaxed">→ Success without meaning</li>
+                  <li className="text-muted-foreground leading-relaxed">→ Emotional exhaustion masking as ambition</li>
+                  <li className="text-muted-foreground leading-relaxed">→ Moving from the outside in</li>
+                </ul>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.4}>
+              <div>
+                <h3 className="font-serif text-lg text-primary mb-8 uppercase tracking-widest">After</h3>
+                <ul className="space-y-4">
+                  <li className="text-muted-foreground leading-relaxed">→ Calm inner authority guiding choices</li>
+                  <li className="text-muted-foreground leading-relaxed">→ Creative clarity rooted in truth</li>
+                  <li className="text-muted-foreground leading-relaxed">→ Work that reflects your soul</li>
+                  <li className="text-muted-foreground leading-relaxed">→ Sustainable energy and presence</li>
+                  <li className="text-muted-foreground leading-relaxed">→ Moving from the inside out</li>
+                </ul>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
       {/* Three Living Foundations */}
       <section className="py-32 px-6">
         <div className="max-w-4xl mx-auto">
@@ -157,7 +194,7 @@ export default function OfferingsPage() {
       </section>
 
       {offerings.map((offering, index) => (
-        <section key={offering.name} id={`offering-${offering.slug}`} className={`py-32 px-6 ${index % 2 === 0 ? "bg-background" : "bg-card"}`}>
+        <section key={offering.name} className={`py-32 px-6 ${index % 2 === 0 ? "bg-background" : "bg-card"}`}>
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">{offering.name}</h2>

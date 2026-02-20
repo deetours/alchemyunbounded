@@ -50,8 +50,46 @@ export default function BeginPage() {
         </div>
       </section>
 
+      {/* Ritual UX - Pause & Reflect (100% Element #5) */}
+      <section className="py-32 px-6 bg-card">
+        <div className="max-w-3xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+          >
+            <p className="font-serif text-2xl md:text-3xl text-foreground mb-16">Pause.</p>
+
+            <p className="font-serif text-2xl md:text-3xl text-foreground mb-12">
+              Take one slow breath.
+            </p>
+
+            <p className="font-serif text-xl md:text-2xl text-primary mb-16 tracking-widest">
+              Ask yourself:
+            </p>
+
+            <div className="border-l-4 border-primary pl-8 py-8 text-left inline-block">
+              <p className="font-serif text-lg md:text-xl text-foreground italic leading-relaxed">
+                "Where in my life am I pretending to be okay?"
+              </p>
+            </div>
+
+            <ScrollReveal delay={0.8}>
+              <p className="mt-20 text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+                If you felt something move inside you just now—
+                <br />
+                <span className="text-primary font-serif text-lg">
+                  You are ready for this work.
+                </span>
+              </p>
+            </ScrollReveal>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Before You Reach Out */}
-      <section className="py-16 px-6 bg-card">
+      <section className="py-16 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <ScrollReveal>
             <h2 className="font-serif text-lg text-primary mb-12 tracking-widest uppercase">Before You Reach Out</h2>
