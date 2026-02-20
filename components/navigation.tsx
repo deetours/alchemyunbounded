@@ -81,46 +81,48 @@ export function Navigation() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className="fixed inset-0 z-50 bg-background md:hidden pt-20"
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-50 bg-background md:hidden overflow-y-auto"
           >
-            {/* Close Button */}
-            <div className="flex justify-end px-6 py-4">
+            {/* Fixed Close Button Header */}
+            <div className="fixed top-0 right-0 left-0 z-50 bg-background border-b border-border/20 px-6 py-6 flex justify-between items-center">
+              <div />
               <button
                 onClick={() => setIsOpen(false)}
-                className="p-2"
+                className="p-3 hover:bg-card rounded-lg transition-all duration-300 active:scale-95"
                 aria-label="Close menu"
               >
-                <motion.svg
-                  width="24"
-                  height="24"
+                <svg
+                  width="28"
+                  height="28"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2"
+                  strokeWidth="2.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="text-foreground"
+                  className="text-foreground hover:text-primary transition-colors"
                 >
                   <line x1="18" y1="6" x2="6" y2="18" />
                   <line x1="6" y1="6" x2="18" y2="18" />
-                </motion.svg>
+                </svg>
               </button>
             </div>
 
-            <div className="flex flex-col items-center justify-start h-full gap-8 px-6">
+            {/* Menu Items */}
+            <div className="flex flex-col items-center justify-start gap-8 px-6 pt-32 pb-20">
               {navLinks.map((link, index) => (
                 <motion.div
                   key={link.href}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 20 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  transition={{ duration: 0.3, delay: index * 0.08 }}
                 >
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="font-serif text-3xl text-foreground hover:text-primary transition-colors duration-500"
+                    className="font-serif text-3xl md:text-4xl text-foreground hover:text-primary transition-colors duration-300 py-2 block"
                   >
                     {link.label}
                   </Link>
