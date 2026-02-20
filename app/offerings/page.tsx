@@ -189,18 +189,13 @@ export default function OfferingsPage() {
 
             <ScrollReveal delay={0.5}>
               <div className="mt-12">
-                <button
-                  onClick={() => {
-                    const element = document.getElementById(`offering-${offering.slug}`)
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' })
-                    }
-                  }}
-                  className="inline-flex items-center gap-3 text-primary hover:text-foreground transition-colors duration-500 font-sans text-sm tracking-widest uppercase cursor-pointer"
+                <Link
+                  href={`/offerings/${offering.slug}`}
+                  className="inline-flex items-center gap-3 text-primary hover:text-foreground transition-colors duration-500 font-sans text-sm tracking-widest uppercase"
                 >
                   Explore This Path
                   <span>→</span>
-                </button>
+                </Link>
               </div>
             </ScrollReveal>
           </div>
